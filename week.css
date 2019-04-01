@@ -1,0 +1,164 @@
+body {
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+}
+
+.week {
+  position: relative;
+  width: 900px;
+}
+.day {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 10%;
+  margin: 0 1.5%;
+  background: #f0f0f0;
+  border-radius: 3px;
+  z-index: 1;
+}
+.day.muuri-item-dragging {
+  z-index: 3;
+}
+.day.muuri-item-releasing {
+  z-index: 2;
+}
+.day.muuri-item-hidden {
+  z-index: 0;
+}
+.day-header {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 0 20px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+}
+@media (max-width: 600px) {
+  .day-header {
+    text-indent: -1000px;
+  }
+}
+.day-content {
+  position: relative;
+  border: 10px solid transparent;
+  min-height 95px;
+}
+.day-item {
+  position: absolute;
+  width: 100%;
+  margin-top: 3px;
+  color: #fff;
+  background: #000;
+}
+.day-item.muuri-item-releasing {
+  z-index: 9998;
+}
+.day-item.muuri-item-dragging {
+  z-index: 9999;
+  cursor: move;
+}
+.day-item.muuri-item-hidden {
+  z-index: 0;
+}
+.day-item-content {
+  position: relative;
+  /*padding: 20px;*/
+  font-size: 8px;
+  text-align: center;
+  /*
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.2);
+  */
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .day-item-content {
+    text-align: center;
+  }
+  .day-item-content span {
+    display: none;
+  }
+}
+
+.hr030 {
+  height: 7px;
+}
+.hr1 {
+  height: 17px;
+}
+.hr130 {
+  height: 27px;
+}
+.hr2 {
+  height: 37px;
+}
+.hr3 {
+  height: 57px;
+}
+.hr330 {
+  height: 67px;
+}
+.hr4 {
+  height: 77px;
+}
+.hr5 {
+  height: 97px;
+}
+.hr6 {
+  height: 117px;
+}
+.hr7 {
+  height: 137px;
+}
+.hr8 {
+  height: 157px;
+}
+.hr16 {
+  height: 317px;
+}
+
+.sleep {
+  background: blue;
+}
+.x {
+  background: grey;
+  color: #d90166; /* dark hot pink */
+}
+
+.day-item-content.work,.work .day-header {
+  background: red;
+}
+.play .day-header {
+  background: green;
+}
+
+.ride {
+  background: #2a7e19; /* tree green */
+}
+
+.date {
+  background: #d90166; /* dark hot pink */
+}
+
+.adhd {
+  background: #fe4b03; /* blood orange */
+}
+
+.laundry {
+  background: #b1d1fc; /* powder blue */
+  color: black;
+}
+
+.prep {
+  background: #5cac2d; /* grass */
+  color: black; /* tree green */
+}
+
+.meetings {
+  background: #610023; /* burgundy */
+}
